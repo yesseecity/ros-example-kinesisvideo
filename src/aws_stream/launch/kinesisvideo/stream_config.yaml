@@ -1,5 +1,5 @@
 # Kinesis Video Stream name. If a stream by the given name doesn't exist, it will be created.
-stream_name: "tid_stream_from_ros"
+stream_name: "test_stream_from_ros"
 
 # Topic name to subscribe and receive the image/video data from.
 subscription_topic: /video/encoded

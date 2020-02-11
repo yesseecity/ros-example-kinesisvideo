@@ -21,8 +21,8 @@ aws_client_configuration:
   # Enables you to tell the HTTP client where to find your SSL certificate trust store (for example, a directory
   # prepared with OpenSSL's c_rehash utility). You shouldn't need to do this unless you are using symlinks in your
   # environment. This has no effect on Windows or OS X.
-  # caPath: "/home/tid"
-  # caFile: "id_rsa"
+  # caPath: ""
+  # caFile: ""
 
   # Values that determine the length of time, in milliseconds, to wait before timing out a request. You can increase
   # this value if you need to transfer large files, such as in Amazon S3 or Amazon CloudFront.
