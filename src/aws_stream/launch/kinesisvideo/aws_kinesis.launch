@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Open Back Camera With Fisheye Calibration-->
+
+<launch>
+    <arg name='current_path'  default="$(find aws_stream)/launch/kinesisvideo" />
+    
+    <!--AWS  kinesisvideo-ros1 -->
+    <arg name="node_config_file" default="$(arg current_path)/node_config.yaml"/>
+    <arg name="stream_config_file" default="$(arg current_path)/stream_config.yaml"/>
+    <include file="$(find kinesis_video_streamer)/launch/kinesis_video_streamer.launch" >
+         <!-- The configuration can either be passed in using the "node_config_file" and "stream_config_file" parameters
+         or by using a rosparam tag to load the config into the parameter server  -->
+        <arg name="node_name" default="kinesis_video_streamer" />
+        <arg name="node_config_file" value="$(arg node_config_file)"/>
+        <arg name="stream_config_file" value="$(arg stream_config_file)"/>
+    </include>
+</launch>
