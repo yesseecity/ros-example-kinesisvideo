@@ -47,16 +47,16 @@ Change your camera setting in [/src/aws_stream/launch/aws_camera.launch](/src/aw
 Add user
 ![AWS Add user](/images/iam_add_user_1.png)  
 
-### Select policy ```AmazonKinesisVideoStreamsFullAccess```
+### Select policy **AmazonKinesisVideoStreamsFullAccess**
 ![AWS Add user](/images/iam_add_user_2.png)
 
-#### Note ```Access key ID``` and ```Secret access key``  
+### Take down **Access key ID** and **Secret access key**  
 ![AWS Add user](/images/iam_add_user_3.png)  
 
-#### Back user list and click user stream_video_user  
+### Back user list and click user stream_video_user  
 ![AWS Add user](/images/iam_add_user_4.png)  
 
-### Note ```User ARN```  
+### Take down **User ARN**  
 ![AWS Add user](/images/iam_add_user_5.png)  
 
 ### Add user access info to your ```~/.bashrc``` or ```~/.zshrc```  
