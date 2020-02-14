@@ -2,7 +2,7 @@
 <!--Open Back Camera With Fisheye Calibration-->
 
 <launch>
-    <arg name='current_path'  default="$(find aws_stream)/launch/kinesisvideo" />
+    <arg name='current_path'  default="$(find aws_stream)/launch/front_cam" />
     
     <!--AWS  kinesisvideo-ros1 -->
     <arg name="node_config_file" default="$(arg current_path)/node_config.yaml"/>

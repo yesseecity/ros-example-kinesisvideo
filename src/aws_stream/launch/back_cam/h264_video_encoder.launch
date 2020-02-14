@@ -1,0 +1,12 @@
+<launch>
+    <!-- Custom Nodes would be launched here -->
+
+    <arg name="config_file" default="$(find aws_stream)/launch/back_cam/h264_video_encoder_config.yaml"/>
+
+    <include file="$(find h264_video_encoder)/launch/h264_video_encoder.launch" >
+        <!-- The configuration can either be passed in using the "config_file" parameter or by using a rosparam tag
+                to load the config into the parameter server -->
+        <arg name="config_file" value="$(arg config_file)"/>
+        <arg name="image_transport" value="raw"/>
+    </include>
+</launch>

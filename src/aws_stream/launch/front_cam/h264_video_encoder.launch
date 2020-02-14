@@ -1,8 +1,7 @@
 <launch>
     <!-- Custom Nodes would be launched here -->
 
-    <!-- <arg name="config_file" default="$(find h264_video_encoder)/config/sample_configuration.yaml"/> -->
-    <arg name="config_file" default="$(find aws_stream)/launch/kinesisvideo/h264_video_encoder_config.yaml"/>
+    <arg name="config_file" default="$(find aws_stream)/launch/front_cam/h264_video_encoder_config.yaml"/>
 
     <include file="$(find h264_video_encoder)/launch/h264_video_encoder.launch" >
         <!-- The configuration can either be passed in using the "config_file" parameter or by using a rosparam tag
