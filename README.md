@@ -14,8 +14,7 @@ ROS example for usb-cam and aws-kinesisvideo
 * Install dependency  
 ```sh 
 sudo apt-get update
-sudo apt-get install -y ros-$ROS_DISTRO-h264-video-encoder  
-sudo apt-get install -y ros-$ROS_DISTRO-kinesis-video-streamer
+sudo apt-get install -y ros-$ROS_DISTRO-h264-video-encoder  ros-$ROS_DISTRO-image-view ros-$ROS_DISTRO-kinesis-video-streamer
 ```
 
 * ROS catkin make
